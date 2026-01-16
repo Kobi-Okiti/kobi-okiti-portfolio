@@ -124,10 +124,6 @@ export function Hero() {
             variants={itemVariants}
             className="flex flex-col gap-4 sm:flex-row"
           >
-            <Button size="lg" onClick={scrollToContact} className="group">
-              Get in Touch
-              <ArrowDown className="ml-2 size-4 transition-transform group-hover:translate-y-1" />
-            </Button>
             <Button size="lg" variant="outline" asChild>
               <a
                 href="/Kobi-Okiti-CV.pdf"
@@ -138,6 +134,10 @@ export function Hero() {
                 <Download className="mr-2 size-4" />
                 View Resume
               </a>
+            </Button>
+            <Button size="lg" onClick={scrollToContact} className="group">
+              Get in Touch
+              <ArrowDown className="ml-2 size-4 transition-transform group-hover:translate-y-1" />
             </Button>
           </motion.div>
         </motion.div>
