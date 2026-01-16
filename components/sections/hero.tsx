@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { ArrowDown, Download } from "lucide-react"
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { ArrowDown, Download } from "lucide-react";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -14,7 +14,7 @@ const containerVariants = {
       delayChildren: 0.1,
     },
   },
-}
+};
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -25,13 +25,13 @@ const itemVariants = {
       duration: 0.5,
     },
   },
-}
+};
 
 export function Hero() {
   const scrollToContact = () => {
-    const contactSection = document.getElementById("contact")
-    contactSection?.scrollIntoView({ behavior: "smooth" })
-  }
+    const contactSection = document.getElementById("contact");
+    contactSection?.scrollIntoView({ behavior: "smooth" });
+  };
 
   // const scrollToAbout = () => {
   //   const aboutSection = document.getElementById("about")
@@ -51,10 +51,7 @@ export function Hero() {
           className="flex flex-col items-center text-center w-full"
         >
           {/* Profile Picture */}
-          <motion.div
-            variants={itemVariants}
-            className="mb-8"
-          >
+          <motion.div variants={itemVariants} className="mb-8">
             <div className="relative size-32 overflow-hidden rounded-full border-4 border-primary/20 ring-4 ring-primary/10  max-md:size-48">
               <Image
                 src="/profile.jpeg"
@@ -65,8 +62,9 @@ export function Hero() {
                 priority
                 onError={(e) => {
                   // Fallback to placeholder if image doesn't exist
-                  const target = e.target as HTMLImageElement
-                  target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect fill='%23333' width='200' height='200'/%3E%3Ctext fill='%23666' font-family='sans-serif' font-size='60' dy='.3em' x='50%25' y='50%25' text-anchor='middle'%3EOK%3C/text%3E%3C/svg%3E"
+                  const target = e.target as HTMLImageElement;
+                  target.src =
+                    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect fill='%23333' width='200' height='200'/%3E%3Ctext fill='%23666' font-family='sans-serif' font-size='60' dy='.3em' x='50%25' y='50%25' text-anchor='middle'%3EOK%3C/text%3E%3C/svg%3E";
                 }}
               />
             </div>
@@ -97,10 +95,7 @@ export function Hero() {
           </motion.p>
 
           {/* Two-line headline */}
-          <motion.div
-            variants={itemVariants}
-            className="mb-8 space-y-2"
-          >
+          <motion.div variants={itemVariants} className="mb-8 space-y-2">
             <p className="text-xl font-light leading-relaxed sm:text-2xl md:text-3xl">
               Building digital experiences
             </p>
@@ -129,31 +124,23 @@ export function Hero() {
             variants={itemVariants}
             className="flex flex-col gap-4 sm:flex-row"
           >
-            <Button
-              size="lg"
-              onClick={scrollToContact}
-              className="group"
-            >
+            <Button size="lg" onClick={scrollToContact} className="group">
               Get in Touch
               <ArrowDown className="ml-2 size-4 transition-transform group-hover:translate-y-1" />
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-            >
+            <Button size="lg" variant="outline" asChild>
               <a
                 href="/Kobi-Okiti-CV.pdf"
-                download
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center"
               >
                 <Download className="mr-2 size-4" />
-                Download Resume
+                View Resume
               </a>
             </Button>
           </motion.div>
         </motion.div>
-
       </div>
 
       {/* Scroll indicator - Fixed to viewport bottom */}
@@ -181,5 +168,5 @@ export function Hero() {
         </motion.div>
       </motion.button> */}
     </section>
-  )
+  );
 }
