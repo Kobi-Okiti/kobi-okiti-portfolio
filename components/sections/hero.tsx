@@ -33,10 +33,10 @@ export function Hero() {
     contactSection?.scrollIntoView({ behavior: "smooth" })
   }
 
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about")
-    aboutSection?.scrollIntoView({ behavior: "smooth" })
-  }
+  // const scrollToAbout = () => {
+  //   const aboutSection = document.getElementById("about")
+  //   aboutSection?.scrollIntoView({ behavior: "smooth" })
+  // }
 
   return (
     <section
@@ -157,7 +157,7 @@ export function Hero() {
       </div>
 
       {/* Scroll indicator - Fixed to viewport bottom */}
-      <motion.button
+      {/* <motion.button
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 0.5 }}
@@ -179,7 +179,7 @@ export function Hero() {
           <span className="text-xs">Scroll</span>
           <ArrowDown className="size-4" />
         </motion.div>
-      </motion.button>
+      </motion.button> */}
     </section>
   )
 }
