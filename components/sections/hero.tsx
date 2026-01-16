@@ -41,7 +41,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex h-[calc(100vh-4rem)] flex-col px-4 py-10 sm:px-6 lg:px-8"
+      className="relative flex h-screen flex-col px-4 py-10 sm:px-6 lg:px-8"
     >
       <div className="mx-auto w-full max-w-5xl flex-1 flex flex-col items-center justify-center pb-20 sm:pb-24">
         <motion.div
@@ -124,6 +124,10 @@ export function Hero() {
             variants={itemVariants}
             className="flex flex-col gap-4 sm:flex-row"
           >
+            <Button size="lg" onClick={scrollToContact} className="group">
+              Get in Touch
+              <ArrowDown className="ml-2 size-4 transition-transform group-hover:translate-y-1" />
+            </Button>
             <Button size="lg" variant="outline" asChild>
               <a
                 href="/Kobi-Okiti-CV.pdf"
@@ -134,10 +138,6 @@ export function Hero() {
                 <Download className="mr-2 size-4" />
                 View Resume
               </a>
-            </Button>
-            <Button size="lg" onClick={scrollToContact} className="group">
-              Get in Touch
-              <ArrowDown className="ml-2 size-4 transition-transform group-hover:translate-y-1" />
             </Button>
           </motion.div>
         </motion.div>
