@@ -29,7 +29,7 @@ export const projects: Project[] = [
     techStack: ["React Native", "Expo", "React JS", "Javascript","Expo Navigation", "Express JS", "Node JS", "PostgreSQL", "Drizzle ORM", "Drizzle Kit", "Clerk authentication"],
     image: "/recipe-app/image3.png",
     images: ["/recipe-app/image1.png", "/recipe-app/image2.png", "/recipe-app/image3.png", "/recipe-app/image4.png", "/recipe-app/image5.png", "/recipe-app/image6.png"],
-    github: "https://github.com/Kobi-Okiti/notes-app-react-native",
+    github: "https://github.com/Kobi-Okiti/fullstack-recipe-app",
   },
   {
     id: "4",
