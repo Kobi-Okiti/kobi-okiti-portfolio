@@ -24,6 +24,15 @@ export const projects: Project[] = [
   },
   {
     id: "3",
+    title: "Full-Stack Recipe App",
+    description: "A mobile recipe application built with React Native that consumes a third-party meals API while managing user favorites through a custom backend. Favorites are fetched from the external API and persisted in a PostgreSQL database via a REST API.",
+    techStack: ["React Native", "Expo", "React JS", "Javascript","Expo Navigation", "Express JS", "Node JS", "PostgreSQL", "Drizzle ORM", "Drizzle Kit", "Clerk authentication"],
+    image: "/recipe-app/image3.png",
+    images: ["/recipe-app/image1.png", "/recipe-app/image2.png", "/recipe-app/image3.png", "/recipe-app/image4.png", "/recipe-app/image5.png", "/recipe-app/image6.png"],
+    github: "https://github.com/Kobi-Okiti/notes-app-react-native",
+  },
+  {
+    id: "4",
     title: "iOS Notes App",
     description: "A simple iOS Notes app that connects to a backend API and allows you to create, edit, and delete notes. Built with SwiftUI, Swift, and Xcode.",
     techStack: ["SwiftUI", "Swift", "Xcode", "Express JS", "Node JS", "MongoDB", "Javascript"],
@@ -32,7 +41,7 @@ export const projects: Project[] = [
     github: "https://github.com/Kobi-Okiti/ios-notes-app",
   },
   {
-    id: "4",
+    id: "5",
     title: "School Payment and Receipt Management System",
     description: "A web application that allows students to make payments to schools, schools to manage student payments and generate receipts.",
     techStack: ["Vite", "React JS", "TypeScript", "Tailwind CSS", "Shadcn UI", "react-pdf/renderer", "Javascript"],
@@ -42,9 +51,9 @@ export const projects: Project[] = [
     github: "https://github.com/Kobi-Okiti/payment-receipt-generator",
   },
   {
-    id: "5",
+    id: "6",
     title: "React Native Notes App",
-    description: "A simple React Native Notes app that connects to a backend API and allows you to create, edit, and delete notes. Built with React Native, TypeScript, and Expo.",
+    description: "A simple React Native Notes app that connects to a backend API and allows you to create, edit, and delete notes.",
     techStack: ["React Native", "TypeScript", "Expo", "React JS", "Javascript","React Native Navigation", "Axios", "Express JS", "Node JS", "MongoDB", "Javascript"],
     image: "/rn-notes/image1.png",
     images: ["/rn-notes/image1.png", "/rn-notes/image2.png", "/rn-notes/image3.png", "/rn-notes/image4.png",],
